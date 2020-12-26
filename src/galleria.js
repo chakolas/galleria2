@@ -38,17 +38,33 @@ const Style2 = makeStyles(theme => ({
 		}
 	}))
 
+	
+const Style3 = makeStyles(theme => ({
+	root: {
+	},
+	gutterTopAndBottom: {
+		margin: 20
+	},
+	card: {
+		maxWidth: 1920
+	},
+	media: {
+		height: 90,
+		width: 1920
+	}
+	}))
+
 function Details({Image}) {
 	const classes = Style1()
 	return (
 		<div className={classes.root}>
-			<Grid container direction='row' align="center" justify="center">
+			{/*<Grid container direction='row' align="center" justify="center">
 				<Card className={classes.card}>
 				<CardActionArea>
 				<CardMedia className={classes.media} image='http://192.168.1.74:8080/Chakolas_Video/galleria.png' title='Event' />
 				</CardActionArea>
 				</Card>
-			</Grid>
+	</Grid>*/}
 	</div>
 	)
 }
@@ -56,16 +72,34 @@ function Media() {
 	const classes = Style2()
 	return (
 		<div className={classes.root}>
-			{/*<Grid container direction='row' align="center" justify="center">
-		<video autoplay="true" muted="true" width='1900' height='1010' preload='true' loop='true' controls controlsList="nodownload">
-		<source src= 'http://192.168.1.74:8080/chakolas.mp4'/>
+			<Grid container direction='row' align="center" justify="center">
+		<video autoplay="true" muted="true" width='1920' height='900' preload='true' loop='true' controls controlsList="nodownload">
+			{/*<source src='http://192.168.1.74:8080/Chakolas_Video/Chakolas.mp4'/>*/}
+		<source src= 'https://res.cloudinary.com/chakolas/video/upload/v1606558971/Chakolas_1_ictscg.mp4'/>
 		</video>
-	</Grid>*/}
+	</Grid>
 		</div>
 		)
 	}
 
+	
+function Footer({Image}) {
+	const classes = Style3()
+	return (
+		<div className={classes.root}>
+			<Grid container direction='row' align="center" justify="center">
+				<Card className={classes.card}>
+				<CardActionArea>
+				<CardMedia className={classes.media} image='https://chakolas.github.io/images/BG1920.png' title='Event' />
+				</CardActionArea>
+				</Card>
+	</Grid>
+	</div>
+	)
+}
+
 export {
 	Details,
-	Media
+	Media,
+	Footer
 }
