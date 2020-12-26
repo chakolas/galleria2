@@ -90,7 +90,7 @@ function Footer({Image}) {
 			<Grid container direction='row' align="center" justify="center">
 				<Card className={classes.card}>
 				<CardActionArea>
-				<CardMedia className={classes.media} image='https://chakolas.github.io/images/BG1920.png' title='Event' />
+				<CardMedia className={classes.media} image='https://chakolas.github.io/images/BG1920.png' />
 				</CardActionArea>
 				</Card>
 	</Grid>
