@@ -1,5 +1,5 @@
 import React from 'react'
-import {Media,Details} from './galleria'
+import {Media,Details,Footer} from './galleria'
 import Grid from '@material-ui/core/Grid'
 import { ThemeProvider } from "@material-ui/styles"
 import {
@@ -44,6 +44,7 @@ class App extends React.Component {
 				</Grid>
 				</Typography>
 				<Media />
+					<Footer />
 				</ThemeProvider>
 			)
 		}
