@@ -75,7 +75,7 @@ function Media() {
 			<Grid container direction='row' align="center" justify="center">
 		<video autoplay="true" muted="true" width='1920' height='900' preload='true' loop='true' controls controlsList="nodownload">
 			{/*<source src='http://192.168.1.74:8080/Chakolas_Video/Chakolas.mp4'/>*/}
-		<source src= 'https://res.cloudinary.com/chakolas/video/upload/v1606558971/Chakolas_1_ictscg.mp4'/>
+		<source src= 'https://res.cloudinary.com/chako/video/upload/v1617868308/Pavilion_luxb1d.mp4'/>
 		</video>
 	</Grid>
 		</div>
